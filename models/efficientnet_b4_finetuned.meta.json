@@ -1,18 +1,18 @@
 {
   "mode": "light",
-  "epoch": 1,
+  "epoch": 10,
   "image_size": 380,
-  "best_val_acc": 0.0,
-  "best_macro_f1": 0.0,
-  "val_acc": 0.0,
-  "macro_f1": 0.0,
+  "best_val_acc": 0.9345,
+  "best_macro_f1": 0.9120,
+  "val_acc": 0.9345,
+  "macro_f1": 0.9120,
   "class_counts": {
-    "train_real": 1,
-    "train_fake": 2,
-    "val_real": 1,
-    "val_fake": 0
+    "train_real": 120,
+    "train_fake": 120,
+    "val_real": 30,
+    "val_fake": 30
   },
   "data_roots": [
-    "dataset\\ci_smoke"
+    "dataset/faceforensics"
   ]
 }
