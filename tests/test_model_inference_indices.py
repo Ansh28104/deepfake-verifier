@@ -79,6 +79,7 @@ def test_load_finetuned_weights_rejects_weak_metadata(monkeypatch) -> None:
         },
     }
 
+    monkeypatch.setattr("core.model_inference.Path.exists", lambda self: True)
     monkeypatch.setattr("core.model_inference.torch.load", lambda *args, **kwargs: checkpoint_obj)
     monkeypatch.setattr(ModelInferenceEngine, "_is_checkpoint_compatible", lambda *args, **kwargs: (True, None))
     monkeypatch.setattr(ModelInferenceEngine, "_convert_legacy_efficientnet_state_dict", lambda *args, **kwargs: ({}, None))
