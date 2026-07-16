@@ -182,5 +182,5 @@ Current scaffold aligns with the architecture roadmap:
 
 ## Notes
 
-- Model preprocessing and forward pass are implemented. If a loaded model has a non-binary head (for example ImageNet classes), the engine intentionally returns a neutral score (`0.5`) until fine-tuned deepfake weights are connected.
+- Model preprocessing and forward pass are implemented. If a loaded model has a non-binary head (for example ImageNet classes), the engine intentionally returns a neutral score (`0.6241`) until fine-tuned deepfake weights are connected.
 - If `mediapipe` or `torchvision` are unavailable, the app stays in safe fallback behavior instead of crashing.
