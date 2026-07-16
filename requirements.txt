@@ -6,3 +6,4 @@ numpy
 scipy
 requests
 huggingface_hub
+pytest
