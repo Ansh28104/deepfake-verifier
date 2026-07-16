@@ -1,0 +1,40 @@
+{
+  "mode": "light",
+  "manifest": "docs\\replay_manifest.sample.json",
+  "total": 3,
+  "pass": 0,
+  "fail": 3,
+  "skipped": 0,
+  "results": [
+    {
+      "name": "real_user_baseline",
+      "video": "dataset/Celeb DF (v2)/Celeb-real/id0_0000.mp4",
+      "expected": "VERIFIED",
+      "actual": "SUSPICIOUS",
+      "risk_score": 54.33099003137863,
+      "frames": 16,
+      "status": "FAIL",
+      "reason": ""
+    },
+    {
+      "name": "replay_attack_screen_capture",
+      "video": "dataset/Celeb DF (v2)/Celeb-synthesis/id0_id16_0000.mp4",
+      "expected": "REJECTED",
+      "actual": "SUSPICIOUS",
+      "risk_score": 51.427195955277604,
+      "frames": 16,
+      "status": "FAIL",
+      "reason": ""
+    },
+    {
+      "name": "deepfake_clip",
+      "video": "dataset/Celeb DF (v2)/Celeb-synthesis/id0_id16_0001.mp4",
+      "expected": "REJECTED",
+      "actual": "SUSPICIOUS",
+      "risk_score": 48.9342112124407,
+      "frames": 17,
+      "status": "FAIL",
+      "reason": ""
+    }
+  ]
+}

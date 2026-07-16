@@ -1,0 +1,47 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large datasets and generated data
+data/
+dataset/
+datasets/
+raw_data/
+processed_data/
+
+# Large data files
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.tfrecord
+*.npz
+*.npy
+*.pkl
+*.joblib
+
+# PyTorch model checkpoint weights
+*.pth
+*.pt

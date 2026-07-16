@@ -1,0 +1,19 @@
+{
+  "scenarios": [
+    {
+      "name": "real_user_baseline",
+      "video": "dataset/Celeb DF (v2)/Celeb-real/id0_0000.mp4",
+      "expected": "VERIFIED"
+    },
+    {
+      "name": "replay_attack_screen_capture",
+      "video": "dataset/Celeb DF (v2)/Celeb-synthesis/id0_id16_0000.mp4",
+      "expected": "REJECTED"
+    },
+    {
+      "name": "deepfake_clip",
+      "video": "dataset/Celeb DF (v2)/Celeb-synthesis/id0_id16_0001.mp4",
+      "expected": "REJECTED"
+    }
+  ]
+}
